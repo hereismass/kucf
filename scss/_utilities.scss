@@ -1,0 +1,198 @@
+/* - - - - UTILITIES - - - - */
+
+//floats
+.float-left{
+	float:left !important;
+}
+.float-right{
+	float:right !important;
+}
+
+// Border utilities
+.border        { border: $border !important; }
+.border-top    { border-top: $border !important; }
+.border-right  { border-right: $border !important; }
+.border-bottom { border-bottom: $border !important; }
+.border-left   { border-left: $border !important; }
+
+.border-y {
+  border-top: $border !important;
+  border-bottom: $border !important;
+}
+
+// Border colors
+.border--grey       { border-color: $color-border-grey !important; }
+.border--grey-light { border-color: $color-border-grey-light !important; }
+.border--light  { border-color: $color-border-light !important; }
+.border--dark  { border-color: $color-dark !important; }
+//kucf colors
+@each $name, $color in $kucf-colors{
+	.border--#{$name}{
+		border-color: $color !important;
+	}
+}
+
+//width
+.bw-small{
+	border-width: $bw-small !important;
+}
+.bw-large{
+	border-width: $bw-large !important;
+}
+
+//radius
+.br-xsmall{
+	border-radius: $br-xsmall;
+}
+.br-small{
+	border-radius: $br-small;
+}
+.br-normal{
+	border-radius: $br-normal;
+}
+.br-large{
+	border-radius: $br-large;
+}
+//clearfix
+
+.clearfix{
+	@include clearfix;
+}
+
+
+// Display utilites
+.d-block        { display: block !important; }
+.d-inline       { display: inline !important; }
+.d-inline-block { display: inline-block !important; }
+.hidden,
+.d-none         { display: none !important; }
+
+//mobile stuff
+.no-mobile{
+	@include mq-tablet{
+		display: none !important;
+	}
+}
+
+.mobile{
+	display: none !important;
+	@include mq-tablet{
+		display:block !important;
+	}
+}
+
+// Text alignment
+.text-right { text-align: right !important; }
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.no-wrap { white-space: nowrap !important;}
+
+//background colors
+.bg-light{
+	background-color: $color-bg-light;
+}
+.bg-white{
+	background-color: $color-bg-white;
+}
+.bg-dark{
+	background-color: $color-bg-dark;
+}
+.bg-grey{
+	background-color: $color-bg-grey;
+}
+.bg-grey-light{
+	background-color: $color-bg-grey-light;
+}
+//kucf colors
+@each $name, $color in $kucf-colors{
+	.bg-#{$name}{
+		background-color: $color;
+	}
+}
+
+
+//text colors
+.text-dark{ //default value
+	color: $color-dark;
+}
+.text-white{
+	color: $color-white;
+}
+.text-grey{
+	color: $color-grey;
+}
+.text-grey-dark{
+	color: $color-grey-dark;
+}
+//kucf colors
+@each $name, $color in $kucf-colors{
+	.text-#{$name}{
+		color: $color;
+	}
+}
+
+//margins and padding
+// Margin spacer utilities
+@for $i from 1 through length($spacers) {
+  $size: #{nth($spacers, $i)};
+  $scale: #{$i - 1};
+
+  // .m-0, .m-1, .m-2...
+  .m-#{$scale}  { margin       : #{$size} !important; }
+  .mt-#{$scale} { margin-top   : #{$size} !important; }
+  .mr-#{$scale} { margin-right : #{$size} !important; }
+  .mb-#{$scale} { margin-bottom: #{$size} !important; }
+  .ml-#{$scale} { margin-left  : #{$size} !important; }
+
+  .mx-#{$scale} {
+    margin-right: #{$size} !important;
+    margin-left : #{$size} !important;
+  }
+
+  .my-#{$scale} {
+    margin-top   : #{$size} !important;
+    margin-bottom: #{$size} !important;
+  }
+}
+
+// Auto
+.m-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+// Padding spacer utilities
+@for $i from 1 through length($spacers) {
+  $size: #{nth($spacers, $i)};
+  $scale: #{$i - 1};
+
+  // .p-0, .p-1, .p-2...
+  .p-#{$scale}   { padding       : #{$size} !important; }
+  .pt-#{$scale}  { padding-top   : #{$size} !important; }
+  .pr-#{$scale}  { padding-right : #{$size} !important; }
+  .pb-#{$scale}  { padding-bottom: #{$size} !important; }
+  .pl-#{$scale}  { padding-left  : #{$size} !important; }
+
+  .px-#{$scale} {
+    padding-right: #{$size} !important;
+    padding-left: #{$size} !important;
+  }
+
+  .py-#{$scale} {
+    padding-top: #{$size} !important;
+    padding-bottom: #{$size} !important;
+  }
+}
+
+//element width
+
+.autosize{
+	width:100%;
+}
+
+// Links
+
+.link{
+	color: map-get($kucf-colors, "first");
+	text-decoration: none;
+}

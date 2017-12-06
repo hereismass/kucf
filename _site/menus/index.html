@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Menus</title>
+		<link rel="stylesheet" href="/css/kucf.css">
+		<link rel="stylesheet" href="/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="/layout" class="menu__item ">Layout</a>
+				<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+				<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+				<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+				<a href="/menus" class="menu__item menu__item--pink menu__item--selected">Menus</a>
+				<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+				<a href="/utilities" class="menu__item ">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>
+
+<div class="jumbotron">
+	<h1 class="jumbotron__title">Menus</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			<nav class="menu">
+	<a href="/layout" class="menu__item ">Layout</a>
+	<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+	<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+	<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+	<a href="/menus" class="menu__item menu__item--pink menu__item--selected">Menus</a>
+	<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+	<a href="/utilities" class="menu__item ">Utilities</a>
+</nav>
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			<h2 id="simple-menu">Simple menu</h2>
+
+<p>The simplest menu. you can use lists, <code class="highlighter-rouge">div</code>s or <code class="highlighter-rouge">nav</code>s, it doesn’t matter.</p>
+
+<p>Use <code class="highlighter-rouge">.menu__item--selected</code> for the selected item.</p>
+
+<p>You can add FontAwesome icons in a menu item.</p>
+
+<div class="border br-small p-2 my-2"><div class="menu">
+  <a href="#" class="menu__item">Item 1</a>
+  <a href="#" class="menu__item">Item 2</a>
+  <a href="#" class="menu__item menu__item--selected">Item 3</a>
+  <a href="#" class="menu__item">Item 4</a>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 4<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="colors">Colors</h3>
+
+<p>You can change the color of a selected item with a modifier class like <code class="highlighter-rouge">.menu__item--second</code>.</p>
+
+<div class="border br-small p-2 my-2"><div class="menu bg-grey">
+  <a href="#" class="menu__item menu__item--selected menu__item--second"><i class="fa fa-shopping-cart"></i>Item 1</a>
+  <a href="#" class="menu__item"><i class="fa fa-shopping-cart"></i>Item 2</a>
+  <a href="#" class="menu__item menu__item--selected menu__item--white"><i class="fa fa-shopping-cart"></i>Item 3</a>
+  <a href="#" class="menu__item"><i class="fa fa-shopping-cart"></i>Item 4</a>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"menu bg-grey"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected menu__item--second"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-shopping-cart"</span><span class="nt">&gt;&lt;/i&gt;</span>Item 1<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-shopping-cart"</span><span class="nt">&gt;&lt;/i&gt;</span>Item 2<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected menu__item--white"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-shopping-cart"</span><span class="nt">&gt;&lt;/i&gt;</span>Item 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-shopping-cart"</span><span class="nt">&gt;&lt;/i&gt;</span>Item 4<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="two-levels-menu">Two levels menu</h2>
+
+<p>You can add a submenu with <code class="highlighter-rouge">.submenu</code>. It can be inside a <code class="highlighter-rouge">.menu__item</code> or directly next to it.
+You can add submenus item with <code class="highlighter-rouge">.submenu__item</code>. Mark it selected with <code class="highlighter-rouge">.submenu__item--selected</code>.
+A color modifier used on the parent or precendent <code class="highlighter-rouge">.menu__item</code> will automatically be used for the <code class="highlighter-rouge">.submenu__item</code>s of the submenu.</p>
+
+<p>Two examples using <code class="highlighter-rouge">ul li</code>s and <code class="highlighter-rouge">nav</code>. You can also use <code class="highlighter-rouge">div</code>s. Be sure to apply the <code class="highlighter-rouge">.menu__item</code> and <code class="highlighter-rouge">submenu__item</code> classes to the text element and not its container.</p>
+
+<div class="border br-small p-2 my-2"><ul class="menu">
+  <li class="menu__item menu__item--selected menu__item--third">Item 1
+    <ul class="submenu">
+      <li class="submenu__item">Subitem 1</li>
+      <li class="submenu__item">Subitem 2</li>
+      <li class="submenu__item submenu__item--selected">Subitem 3</li>
+      <li class="submenu__item">Subitem 4</li>
+    </ul> 
+  </li>
+  <li class="menu__item">Item 2</li>
+  <li class="menu__item">Item 3</li>
+  <li class="menu__item">Item 4</li>
+</ul>
+<nav class="menu">
+  <a href="#" class="menu__item menu__item--selected menu__item--fourth">Item 1</a>
+    <nav class="submenu">
+      <a href="#" class="submenu__item">Subitem 1</a>
+      <a href="#" class="submenu__item">Subitem 2</a>
+      <a href="#" class="submenu__item submenu__item--selected">Subitem 3</a>
+      <a href="#" class="submenu__item">Subitem 4</a>
+    </nav>
+  <a href="#" class="menu__item">Item 2</a>
+  <a href="#" class="menu__item">Item 3</a>
+  <a href="#" class="menu__item">Item 4</a>
+</nav></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected menu__item--third"</span><span class="nt">&gt;</span>Item 1
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 1<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 2<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item submenu__item--selected"</span><span class="nt">&gt;</span>Subitem 3<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 4<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span> 
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 4<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected menu__item--fourth"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 1<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 2<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item submenu__item--selected"</span><span class="nt">&gt;</span>Subitem 3<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 4<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 4<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+<h3 id="dropdown">Dropdown</h3>
+
+<p>You can add <code class="highlighter-rouge">.menu--dropdown</code> modifier to your menu in order to set it as a dropdown menu for the second level menus.</p>
+
+<p>You will have use a specific DOM, as shown in these examples.</p>
+
+<div class="border br-small p-2 my-2"><ul class="menu menu--dropdown">
+  <li>
+    <label for="item1" class="menu__item menu__item--selected menu__item--second">Item 1</label>
+    <input type="checkbox" id="item1" />
+    <ul class="submenu">
+      <li class="submenu__item">Subitem 1</li>
+      <li class="submenu__item">Subitem 2</li>
+      <li class="submenu__item submenu__item--selected">Subitem 3</li>
+      <li class="submenu__item">Subitem 4</li>
+    </ul> 
+  </li>
+  <li class="menu__item">Item 2</li>
+  <li class="menu__item">Item 3</li>
+  <li class="menu__item">Item 4</li>
+</ul>
+<nav class="menu menu--dropdown">
+  <label for="item2" class="menu__item menu__item--selected menu__item--third">Item 1</label>
+  <input type="checkbox" id="item2" />
+    <nav class="submenu">
+      <a href="#" class="submenu__item">Subitem 1</a>
+      <a href="#" class="submenu__item">Subitem 2</a>
+      <a href="#" class="submenu__item submenu__item--selected">Subitem 3</a>
+      <a href="#" class="submenu__item">Subitem 4</a>
+    </nav>
+  <a href="#" class="menu__item">Item 2</a>
+  <a href="#" class="menu__item">Item 3</a>
+  <a href="#" class="menu__item">Item 4</a>
+</nav></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"menu menu--dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"item1"</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected menu__item--second"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"item1"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 1<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 2<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item submenu__item--selected"</span><span class="nt">&gt;</span>Subitem 3<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 4<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span> 
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 4<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"menu menu--dropdown"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"item2"</span> <span class="na">class=</span><span class="s">"menu__item menu__item--selected menu__item--third"</span><span class="nt">&gt;</span>Item 1<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"item2"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 1<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 2<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item submenu__item--selected"</span><span class="nt">&gt;</span>Subitem 3<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"submenu__item"</span><span class="nt">&gt;</span>Subitem 4<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 2<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"menu__item"</span><span class="nt">&gt;</span>Item 4<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></div>
+
+
+		</div>
+	</div>
+</div>
+
+		<footer class="footer no-mobile">
+			<nav class="footer__menu">
+				<a href="#" class="footer__logo"></a>
+				<a href="#" class="footer__menu__item">Menu Item 1</a>
+				<a href="#" class="footer__menu__item">Menu Item 2</a>
+				<a href="#" class="footer__menu__item">Menu Item 3</a>
+			</nav>
+			<nav class="footer__social">
+				<a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+			</nav>
+			<nav class="footer__menu">
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 1</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+			</nav>
+			<input type="text" class="footer__newsletter" placeholder="Nice placeholder text"/>
+		</footer>
+	</body>
+</html>
+

@@ -1,0 +1,16 @@
+{% include header.html %}
+<div class="jumbotron">
+	<h1 class="jumbotron__title">{{ page.title }}</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			{% include sidebar.html %}
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			{{ content }}
+		</div>
+	</div>
+</div>
+
+{% include footer.html %}

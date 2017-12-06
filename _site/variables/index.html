@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Framework variables</title>
+		<link rel="stylesheet" href="/css/kucf.css">
+		<link rel="stylesheet" href="/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="/layout" class="menu__item ">Layout</a>
+				<a href="/variables" class="menu__item menu__item--green menu__item--selected">Framework variables</a>
+				<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+				<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+				<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+				<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+				<a href="/utilities" class="menu__item ">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>
+
+<div class="jumbotron">
+	<h1 class="jumbotron__title">Framework variables</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			<nav class="menu">
+	<a href="/layout" class="menu__item ">Layout</a>
+	<a href="/variables" class="menu__item menu__item--green menu__item--selected">Framework variables</a>
+	<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+	<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+	<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+	<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+	<a href="/utilities" class="menu__item ">Utilities</a>
+</nav>
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			<p>Variables used by the Framwork. This serve as a referencial for colors, specific width, etc.</p>
+
+<h2 id="colors">Colors</h2>
+
+<h3 id="text-colors">Text colors</h3>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$color-dark</span><span class="p">:</span> <span class="mh">#424548</span><span class="p">;</span>
+<span class="nv">$color-white</span><span class="p">:</span><span class="mh">#FFFFFF</span><span class="p">;</span>
+<span class="nv">$color-grey</span><span class="p">:</span> <span class="mh">#A5A7A8</span><span class="p">;</span>
+<span class="nv">$color-grey-dark</span><span class="p">:</span> <span class="mh">#747779</span><span class="p">;</span></code></pre></figure>
+
+<h3 id="background-colors">Background colors</h3>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$color-bg-white</span><span class="p">:</span> <span class="nv">$color-white</span><span class="p">;</span>
+<span class="nv">$color-bg-light</span><span class="p">:</span> <span class="mh">#FAFAFA</span><span class="p">;</span>
+<span class="nv">$color-bg-dark</span><span class="p">:</span> <span class="nv">$color-dark</span><span class="p">;</span>
+<span class="nv">$color-bg-grey</span><span class="p">:</span><span class="mh">#C5C9CC</span><span class="p">;</span>
+<span class="nv">$color-bg-grey-light</span><span class="p">:</span><span class="mh">#EDEEEF</span><span class="p">;</span></code></pre></figure>
+
+<h3 id="border-colors">Border colors</h3>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$color-shadow-grey</span><span class="p">:</span> <span class="mh">#DDDt</span><span class="p">;</span>
+<span class="nv">$color-border-grey</span><span class="p">:</span> <span class="nv">$color-bg-grey</span><span class="p">;</span>
+<span class="nv">$color-border-grey-light</span><span class="p">:</span> <span class="nv">$color-bg-grey-light</span><span class="p">;</span>
+<span class="nv">$color-border-light</span><span class="p">:</span> <span class="nv">$color-bg-light</span><span class="p">;</span></code></pre></figure>
+
+<h3 id="brand-colors">Brand colors</h3>
+
+<p>These colors are specific to the Lima brand. They can be used for text, background or borders. They are used in buttons as well.</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$lima-blue</span><span class="p">:</span> <span class="mh">#04BEDA</span><span class="p">;</span>
+<span class="nv">$lima-pink</span><span class="p">:</span> <span class="mh">#EA1947</span><span class="p">;</span>
+<span class="nv">$lima-purple</span><span class="p">:</span> <span class="mh">#9760A7</span><span class="p">;</span>
+<span class="err">$</span><span class="nt">lima-orange</span> <span class="nn">#F57F37</span><span class="p">;</span>
+<span class="nv">$lima-yellow</span><span class="p">:</span> <span class="mh">#FFD542</span><span class="p">;</span>
+<span class="nv">$lima-green</span><span class="p">:</span> <span class="mh">#7BC24F</span><span class="p">;</span></code></pre></figure>
+
+<h2 id="fonts">Fonts</h2>
+
+<p>todo</p>
+
+<h2 id="borders">Borders</h2>
+
+<p>todo</p>
+
+<h2 id="container">Container</h2>
+
+<p>todo</p>
+
+<h2 id="spacers">Spacers</h2>
+
+<p>todo</p>
+
+		</div>
+	</div>
+</div>
+
+		<footer class="footer no-mobile">
+			<nav class="footer__menu">
+				<a href="#" class="footer__logo"></a>
+				<a href="#" class="footer__menu__item">Menu Item 1</a>
+				<a href="#" class="footer__menu__item">Menu Item 2</a>
+				<a href="#" class="footer__menu__item">Menu Item 3</a>
+			</nav>
+			<nav class="footer__social">
+				<a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+			</nav>
+			<nav class="footer__menu">
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 1</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+			</nav>
+			<input type="text" class="footer__newsletter" placeholder="Nice placeholder text"/>
+		</footer>
+	</body>
+</html>
+

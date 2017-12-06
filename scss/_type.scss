@@ -1,0 +1,101 @@
+/* - - - - TYPOGRAPHY - - - - */
+
+// Headings
+// --------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-weight: $fw-strong;
+}
+
+h1 {
+  font-size: $fs-biggest;
+  @include mq-small-desktop{
+    font-size: $fs-big;
+  }
+}
+h2 {
+  font-size: $fs-big;
+  @include mq-small-desktop{
+    font-size: $fs-large;
+  }
+}
+h3 {
+  font-size: $fs-large;
+  @include mq-small-desktop{
+    font-size: $fs-medium;
+  }
+}
+h4 { font-size: $fs-medium; }
+h5 { font-size: $fs-small; }
+h6 { font-size: $fs-smaller; }
+
+
+// Body text
+// --------------------------------------------------
+
+p {
+  margin-top: 0;
+  margin-bottom: $spacer2;
+}
+
+small {
+  font-size: $fs-smaller;
+}
+
+blockquote {
+  margin: 0;
+}
+
+// Large leading paragraphs
+.lead {
+  margin-bottom: $spacer3;
+  font-size: $fs-medium;
+  font-weight: $fw-strong;
+  color: $color-grey-dark;
+  @include mq-small-desktop{
+    font-size: $fs-small;
+  }
+}
+
+.text-emphasized {
+  font-weight: $fw-strong;
+  color: $color-grey-dark;
+}
+
+mark{
+	background-color:inherit;
+	color: map-get($kucf-colors, "first");
+	font-weight:$fw-strong;
+}
+
+strong{
+	font-weight: $fw-strong;
+}
+
+em{
+	font-style: italic;
+}
+
+
+// Code
+// --------------------------------------------------
+
+tt,
+code {
+  font-family: $mono-font;
+  font-size: $fs-smaller;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: $fs-smaller $mono-font;
+}

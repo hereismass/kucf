@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/kucf.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="{{ site.baseurl }}/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="{{ site.baseurl }}/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="{{ site.baseurl }}/layout" class="menu__item {% if page.title == "Layout" %}menu__item--selected{% endif %}">Layout</a>
+				<a href="{{ site.baseurl }}/variables" class="menu__item menu__item--green {% if page.title == "Framework variables" %}menu__item--selected{% endif %}">Framework variables</a>
+				<a href="{{ site.baseurl }}/buttons" class="menu__item menu__item--purple {% if page.title == "Buttons" %}menu__item--selected{% endif %}">Buttons</a>
+				<a href="{{ site.baseurl }}/type" class="menu__item menu__item--orange {% if page.title == "Typography" %}menu__item--selected{% endif %}">Typography</a>
+				<a href="{{ site.baseurl }}/menus" class="menu__item menu__item--pink {% if page.title == "Menus" %}menu__item--selected{% endif %}">Menus</a>
+				<a href="{{ site.baseurl }}/forms" class="menu__item menu__item--yellow {% if page.title == "Forms" %}menu__item--selected{% endif %}">Forms</a>
+				<a href="{{ site.baseurl }}/utilities" class="menu__item {% if page.title == "Utilities" %}menu__item--selected{% endif %}">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="{{ site.baseurl }}/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>

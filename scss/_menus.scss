@@ -1,0 +1,226 @@
+/* - - - - MENUS - - - - */
+
+//todo : hover, double level menu
+
+//simple menu
+
+//menu block
+.menu{
+	list-style:none;
+	padding:$spacer2;
+	position: relative;
+}
+
+//menu item block
+.menu__item{
+	display:block;
+	position: relative;
+	padding:$spacer2;
+	color:$color-grey-dark;
+	text-decoration:none;
+	font-size:$fs-small;
+	font-weight:$fw-normal;
+	border-top:$border;
+	cursor:pointer;
+	&:last-child{
+		border-bottom: $border;
+	}
+	.fa{
+		padding-right:$spacer1;
+	}
+	&:hover{
+		color:$color-dark;
+		font-weight:$fw-strong;
+	}
+}
+
+//dropdown
+.menu--dropdown{
+	//we hide checkboxes
+	.menu__item{
+		+ input[type=checkbox]{
+			display:none;
+			&:checked + .submenu{
+				&:after{
+					content:'\f106';
+					font-family: FontAwesome;
+					color:$color-grey-dark !important;
+					position:absolute;
+					right:$spacer2;
+					top:-$spacer3;
+				}
+				.submenu__item{
+					display: block;
+				}
+			}
+			+ .submenu{
+				&:after{
+					content:'\f107';
+					font-family: FontAwesome;
+					color:$color-grey-dark !important;
+					position:absolute;
+					right:$spacer2;
+					top:-$spacer3;
+				}
+				.submenu__item{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+//mobile
+.menu--mobile{
+	background-color: $color-bg-dark;
+	.menu__item{
+		color:$color-white;
+		border-color: $color-border-white;
+	}
+}
+
+
+//we can specify a color modifier to a menu item, for when it is selected
+
+.menu__item--dark{
+	&:before{
+		color: $color-dark !important;
+	}
+	.fa{
+		color: $color-dark !important;
+	}
+	+ .submenu, .submenu{
+		.submenu__item--selected{
+			&:before{
+				color:$color-dark !important;
+			}
+		}
+	}
+}
+
+.menu__item--white{
+	&:before{
+		color: $color-white !important;
+	}
+	.fa{
+		color: $color-white !important;
+	}
+	+ .submenu, .submenu{
+		.submenu__item--selected{
+			&:before{
+				color:$color-white !important;
+			}
+		}
+	}
+}
+
+.menu__item--grey{
+	&:before{
+		color: $color-grey !important;
+	}
+	.fa{
+		color: $color-grey !important;
+	}
+	+ .submenu, .submenu{
+		.submenu__item--selected{
+			&:before{
+				color:$color-grey !important;
+			}
+		}
+	}
+}
+
+.menu__item--grey-dark{
+	&:before{
+		color: $color-grey-dark !important;
+	}
+	.fa{
+		color: $color-grey-dark !important;
+	}
+	+ .submenu, .submenu{
+		.submenu__item--selected{
+			&:before{
+				color:$color-grey-dark !important;
+			}
+		}
+	}
+}
+
+//kucf colors
+@each $name, $color in $kucf-colors{
+	.menu__item--#{$name}{
+		&:before{
+			color: $color !important;
+		}
+		.fa{
+			color: $color !important;
+		}
+		+ .submenu, .submenu{
+			.submenu__item--selected{
+				&:before{
+					color:$color !important;
+				}
+			}
+		}
+	}
+}
+
+
+//menu item selected
+.menu__item--selected{
+	color:$color-dark;
+	font-weight:$fw-strong;
+	&:before{
+		content:'\007C';
+		margin-left:-$spacer2;
+		margin-right: $spacer1;
+		width:$spacer1;
+		font-weight: $fw-strongest;
+		color:map-get($kucf-colors, "first"); //default color
+	}
+}
+
+//second level menu
+.submenu{
+	list-style:none;
+	display:block;
+	position:relative;
+	top:-$spacer1;
+	//bottom:$spacer2;
+}
+
+//fix for submenus inside a menu__item (ul li system)
+.menu__item .submenu{
+	top:$spacer1;
+	left:-$spacer2;
+	//bottom:0;
+}
+
+//second level menu item
+.submenu__item{
+	display:block;
+	list-style:none;
+	padding:$spacer1 $spacer2;
+	color:$color-grey-dark;
+	text-decoration:none;
+	font-size:$fs-small;
+	font-weight:$fw-normal;
+	&:before{
+		content:'\2022';
+		padding:0 $spacer1;
+	}
+	&:hover{
+		color:$color-dark;
+		font-weight:$fw-strong;
+	}
+}
+
+.submenu__item--selected{
+	color:$color-dark;
+	font-weight:$fw-strong;
+	&:before{
+		color:map-get($kucf-colors,"first");
+		font-weight: $fw-normal !important;
+	}
+
+}

@@ -1,0 +1,111 @@
+/* - - - - COLORS - - - - */
+
+//text colors
+$color-dark: #424548 !default;
+$color-white:#FFFFFF !default;
+$color-grey: #A5A7A8 !default;
+$color-grey-dark: #747779 !default;
+
+//content colors
+$color-bg-white: $color-white !default;
+$color-bg-light: #FAFAFA !default;
+$color-bg-dark: $color-dark !default;
+$color-bg-grey:#C5C9CC !default;
+$color-bg-grey-light:#EDEEEF !default;
+
+//border colors
+$color-shadow-grey: #DDD !default;
+$color-border-grey: $color-bg-grey !default;
+$color-border-grey-light: $color-bg-grey-light !default;
+$color-border-light: $color-bg-light !default;
+$color-border-white: $color-white !default;
+
+//kucf colors
+$kucf-colors: ("first": #E54661, "second": #FFA644, "third": #998A2F, "fourth": #2C594F, "fifth": #002D40);
+
+$kucf-darkcolors: ("first": darken(map-get($kucf-colors, "first"), 10%), "second": darken(map-get($kucf-colors, "second"), 10%), "third": darken(map-get($kucf-colors, "third"), 10%), "fourth": darken(map-get($kucf-colors, "fourth"), 10%), "fifth": darken(map-get($kucf-colors, "fifth"), 10%));
+
+
+
+/* - - - - FONTS - - - - */
+
+//Brand font declaration
+@include font-face(Lato, '../fonts/Lato-Regular', 400, normal, ttf);
+@include font-face(Lato, '../fonts/Lato-Italic', 400, italic, ttf);
+@include font-face(Lato, '../fonts/Lato-Bold', 700, normal, ttf);
+@include font-face(Lato, '../fonts/Lato-BoldItalic', 700, italic, ttf);
+@include font-face(Lato, '../fonts/Lato-Light', 300, normal, ttf);
+@include font-face(Lato, '../fonts/Lato-LightItalic', 300, italic, ttf);
+@include font-face(Lato, '../fonts/Lato-Hairline', 100, normal, ttf);
+@include font-face(Lato, '../fonts/Lato-HairlineItalic', 100, italic, ttf);
+
+//font weights
+$fw-strongest: 700;
+$fw-strong: 400;
+$fw-normal: 300;
+$fw-light: 100;
+
+//font sizes
+$fs-biggest: 60px !default;
+$fs-big: 40px !default;
+$fs-large: 24px !default;
+$fs-medium: 18px !default;
+$fs-small: 16px !default;
+$fs-smaller: 13px !default;
+
+//font stack
+$body-font-stack: "Lato", Georgia !default;
+
+//base font size
+$body-font-size: $fs-small !default;
+
+//monospace font stack
+$mono-font: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+
+
+
+/* - - - - MISC - - - -*/
+
+//border width
+$bw-large: 2px !default;
+$bw-small: 1px !default;
+
+//border radius
+$br-normal: 10px !default;
+$br-large: 20px !default;
+$br-small: 5px !default;
+$br-xsmall: 3px !default;
+
+//border style
+$bs-normal: solid !default;
+
+//border stack
+$border : $bw-small $bs-normal $color-border-grey-light;
+
+//container
+$cw-large: 1200px !default;
+$cw-small-desktop: 950px !default;
+$cw-tablet: 100% !default;
+$cw-phone: $cw-tablet !default;
+$cw-small-phone: $cw-phone !default;
+
+//spacers
+$spacer: 10px !default;
+$spacers: (
+  0,
+  round($spacer / 2),
+  $spacer,
+  $spacer * 2,
+  $spacer * 4,
+  $spacer * 6,
+  $spacer * 8
+) !default;
+
+// Aliases for easy use
+$spacer1: nth($spacers, 2) !default; // 5px
+$spacer2: nth($spacers, 3) !default; // 10px
+$spacer3: nth($spacers, 4) !default; // 20px
+$spacer4: nth($spacers, 5) !default; // 40px
+$spacer5: nth($spacers, 6) !default; // 60px
+$spacer6: nth($spacers, 7) !default; // 80px
+

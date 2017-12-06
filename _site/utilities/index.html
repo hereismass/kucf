@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Utilities</title>
+		<link rel="stylesheet" href="/css/kucf.css">
+		<link rel="stylesheet" href="/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="/layout" class="menu__item ">Layout</a>
+				<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+				<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+				<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+				<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+				<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+				<a href="/utilities" class="menu__item menu__item--selected">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>
+
+<div class="jumbotron">
+	<h1 class="jumbotron__title">Utilities</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			<nav class="menu">
+	<a href="/layout" class="menu__item ">Layout</a>
+	<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+	<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+	<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+	<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+	<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+	<a href="/utilities" class="menu__item menu__item--selected">Utilities</a>
+</nav>
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			<p>Utilities for margins, paddings, borders, backgrounds, etc.</p>
+
+<h2 id="floats">Floats</h2>
+
+<p>Quickly float something to the left or right, and clear them later.</p>
+
+<div class="border br-small p-2 my-2"><div class="clearfix">
+  <code class="float-left bg-grey-light p-1 br-xsmall">.float-left</code>
+  <code class="float-right bg-grey-light p-1 br-xsmall">.float-right</code>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"float-left bg-grey-light p-1 br-xsmall"</span><span class="nt">&gt;</span>.float-left<span class="nt">&lt;/code&gt;</span>
+  <span class="nt">&lt;code</span> <span class="na">class=</span><span class="s">"float-right bg-grey-light p-1 br-xsmall"</span><span class="nt">&gt;</span>.float-right<span class="nt">&lt;/code&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="text-alignment">Text alignment</h2>
+
+<p>Change the <code class="highlighter-rouge">text-align</code> on elements with a class.</p>
+
+<div class="border br-small p-2 my-2"><p class="text-left">Left aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-center">Center aligned text.</p></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-left"</span><span class="nt">&gt;</span>Left aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-right"</span><span class="nt">&gt;</span>Right aligned text.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>Center aligned text.<span class="nt">&lt;/p&gt;</span></code></pre></div>
+
+<h2 id="background-colors">Background colors</h2>
+
+<p>Fill in an element with background colors.</p>
+
+<div class="border br-small p-2 my-2"><span class="d-inline-block p-2 bg-white">.bg-white</span>
+<span class="d-inline-block p-2 bg-grey-light">.bg-grey-light</span>
+<span class="d-inline-block p-2 bg-dark text-white">.bg-dark</span>
+<span class="d-inline-block p-2 bg-light">.bg-light</span>
+<span class="d-inline-block p-2 bg-grey">.bg-grey</span>
+<span class="d-inline-block p-2 bg-first">.bg-first</span>
+<span class="d-inline-block p-2 bg-second">.bg-second</span>
+<span class="d-inline-block p-2 bg-third">.bg-third</span>
+<span class="d-inline-block p-2 bg-fourth text-white">.bg-fourth</span>
+<span class="d-inline-block p-2 bg-fifth text-white">.bg-fifth</span></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-white"</span><span class="nt">&gt;</span>.bg-white<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-grey-light"</span><span class="nt">&gt;</span>.bg-grey-light<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-dark text-white"</span><span class="nt">&gt;</span>.bg-dark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-light"</span><span class="nt">&gt;</span>.bg-light<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-grey"</span><span class="nt">&gt;</span>.bg-grey<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-first"</span><span class="nt">&gt;</span>.bg-first<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-second"</span><span class="nt">&gt;</span>.bg-second<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-third"</span><span class="nt">&gt;</span>.bg-third<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-fourth text-white"</span><span class="nt">&gt;</span>.bg-fourth<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block p-2 bg-fifth text-white"</span><span class="nt">&gt;</span>.bg-fifth<span class="nt">&lt;/span&gt;</span></code></pre></div>
+
+<h2 id="text-color">Text color</h2>
+
+<p>Change the <code class="highlighter-rouge">color</code> of elements with a class.</p>
+
+<div class="border br-small p-2 my-2"><span class="text-dark">.text-dark</span>
+<span class="text-white bg-dark">.text-white</span>
+<span class="text-grey">.text-gray</span>
+<span class="text-grey-dark">.text-grey-dark</span>
+<span class="text-first">.text-first</span>
+<span class="text-second">.text-second</span>
+<span class="text-third">.text-third</span>
+<span class="text-fourth">.text-fourth</span>
+<span class="text-fifth">.text-fifth</span></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-dark"</span><span class="nt">&gt;</span>.text-dark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-white bg-dark"</span><span class="nt">&gt;</span>.text-white<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-grey"</span><span class="nt">&gt;</span>.text-gray<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-grey-dark"</span><span class="nt">&gt;</span>.text-grey-dark<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-first"</span><span class="nt">&gt;</span>.text-first<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-second"</span><span class="nt">&gt;</span>.text-second<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-third"</span><span class="nt">&gt;</span>.text-third<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-fourth"</span><span class="nt">&gt;</span>.text-fourth<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-fifth"</span><span class="nt">&gt;</span>.text-fifth<span class="nt">&lt;/span&gt;</span></code></pre></div>
+
+<h2 id="margin">Margin</h2>
+
+<p>You have the option to set margin sizes from <code class="highlighter-rouge">0-5</code>. You also have the optional direction using <code class="highlighter-rouge">t,r,b,l,x,y</code>.</p>
+
+<div class="border br-small p-2 my-2"><div class="d-inline-block bg-first p-2 mr-0">.mr-0</div>
+<div class="d-inline-block bg-first p-2 mr-1">.mr-1</div>
+<div class="d-inline-block bg-first p-2 mr-2">.mr-2</div>
+<div class="d-inline-block bg-first p-2 mr-3">.mr-3</div>
+<div class="d-inline-block bg-first p-2 mr-4">.mr-4</div>
+<div class="d-inline-block bg-first p-2 mr-5">.mr-5</div>
+<div class="d-inline-block bg-first p-2 mx-2">.mx-5</div>
+<div class="d-inline-block bg-first p-2 my-2">.my-5</div>
+<div class="d-inline-block bg-first p-2 m-2">.m-2</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mr-0"</span><span class="nt">&gt;</span>.mr-0<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mr-1"</span><span class="nt">&gt;</span>.mr-1<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mr-2"</span><span class="nt">&gt;</span>.mr-2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mr-3"</span><span class="nt">&gt;</span>.mr-3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mr-4"</span><span class="nt">&gt;</span>.mr-4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mr-5"</span><span class="nt">&gt;</span>.mr-5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 mx-2"</span><span class="nt">&gt;</span>.mx-5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 my-2"</span><span class="nt">&gt;</span>.my-5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-2 m-2"</span><span class="nt">&gt;</span>.m-2<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="padding">Padding</h2>
+
+<p>You have the option to set padding sizes from <code class="highlighter-rouge">0-5</code>. You also have the optional direction using <code class="highlighter-rouge">t,b,x,y</code>.</p>
+
+<div class="border br-small p-2 my-2"><div class="d-inline-block bg-first pt-0">.pt-0</div>
+<div class="d-inline-block bg-first pt-1">.pt-1</div>
+<div class="d-inline-block bg-first pt-2">.pt-2</div>
+<div class="d-inline-block bg-first pt-3">.pt-3</div>
+<div class="d-inline-block bg-first pt-4">.pt-4</div>
+<div class="d-inline-block bg-first pt-5">.pt-5</div>
+<div class="d-inline-block bg-first p-3">.p-3</div>
+<div class="d-inline-block bg-first px-3">.px-3</div>
+<div class="d-inline-block bg-first py-3">.py-3</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first pt-0"</span><span class="nt">&gt;</span>.pt-0<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first pt-1"</span><span class="nt">&gt;</span>.pt-1<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first pt-2"</span><span class="nt">&gt;</span>.pt-2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first pt-3"</span><span class="nt">&gt;</span>.pt-3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first pt-4"</span><span class="nt">&gt;</span>.pt-4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first pt-5"</span><span class="nt">&gt;</span>.pt-5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first p-3"</span><span class="nt">&gt;</span>.p-3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first px-3"</span><span class="nt">&gt;</span>.px-3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-inline-block bg-first py-3"</span><span class="nt">&gt;</span>.py-3<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="display">Display</h2>
+
+<p>You can set your display with these utilities.</p>
+
+<div class="border br-small p-2 my-2"><span class="bg-second text-center d-block p-2">.d-block</span>
+<span class="bg-third text-center d-inline p-2">.d-inline</span>
+<span class="bg-fourth text-center text-white d-inline-block p-2">.d-inline-block</span>
+<span class="bg-fifth text-center d-none p-2">.d-none</span></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bg-second text-center d-block p-2"</span><span class="nt">&gt;</span>.d-block<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bg-third text-center d-inline p-2"</span><span class="nt">&gt;</span>.d-inline<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bg-fourth text-center text-white d-inline-block p-2"</span><span class="nt">&gt;</span>.d-inline-block<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"bg-fifth text-center d-none p-2"</span><span class="nt">&gt;</span>.d-none<span class="nt">&lt;/span&gt;</span></code></pre></div>
+
+<h2 id="borders">Borders</h2>
+
+<p>With these border utilities you can set common borders.</p>
+
+<div class="border br-small p-2 my-2"><div class="border p-3 mb-3">.border</div>
+<div class="border-top p-3 mb-3">.border-top</div>
+<div class="border-right p-3 mb-3">.border-right</div>
+<div class="border-bottom p-3 mb-3">.border-bottom</div>
+<div class="border-left p-3 mb-3">.border-left</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3"</span><span class="nt">&gt;</span>.border<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border-top p-3 mb-3"</span><span class="nt">&gt;</span>.border-top<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border-right p-3 mb-3"</span><span class="nt">&gt;</span>.border-right<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border-bottom p-3 mb-3"</span><span class="nt">&gt;</span>.border-bottom<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border-left p-3 mb-3"</span><span class="nt">&gt;</span>.border-left<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="border-colors">Border colors</h2>
+
+<p>Add these classes with <code class="highlighter-rouge">.border</code> and you’ll have some common border colors.</p>
+
+<div class="border br-small p-2 my-2"><div class="border p-3 mb-3 border--first">.border--first</div>
+<div class="border p-3 mb-3 border--light">.border--light</div>
+<div class="border p-3 mb-3 border--second">.border--second</div>
+<div class="border p-3 mb-3 border--third">.border--third</div>
+<div class="border p-3 mb-3 border--fourth">.border--fourth</div>
+<div class="border p-3 mb-3 border--fifth">.border--fifth</div>
+<div class="border p-3 mb-3 border--dark">.border--dark</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--first"</span><span class="nt">&gt;</span>.border--first<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--light"</span><span class="nt">&gt;</span>.border--light<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--second"</span><span class="nt">&gt;</span>.border--second<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--third"</span><span class="nt">&gt;</span>.border--third<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--fourth"</span><span class="nt">&gt;</span>.border--fourth<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--fifth"</span><span class="nt">&gt;</span>.border--fifth<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 border--dark"</span><span class="nt">&gt;</span>.border--dark<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="border-width">Border width</h2>
+
+<p>Add these classes with <code class="highlighter-rouge">.border</code> to set a different border width.</p>
+
+<div class="border br-small p-2 my-2"><div class="border p-3 mb-3 bw-large">.bw-large</div>
+<div class="border p-3 mb-3 bw-small">.bw-small</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 bw-large"</span><span class="nt">&gt;</span>.bw-large<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 bw-small"</span><span class="nt">&gt;</span>.bw-small<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="border-radius">Border radius</h2>
+
+<p>Add these classes with <code class="highlighter-rouge">.border</code> to set a border radius</p>
+
+<div class="border br-small p-2 my-2"><div class="border p-3 mb-3 br-xsmall">.br-xsmall</div>
+<div class="border p-3 mb-3 br-small">.br-small</div>
+<div class="border p-3 mb-3 br-normal">.br-normal</div>
+<div class="border p-3 mb-3 br-large">.br-large</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 br-xsmall"</span><span class="nt">&gt;</span>.br-xsmall<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 br-small"</span><span class="nt">&gt;</span>.br-small<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 br-normal"</span><span class="nt">&gt;</span>.br-normal<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"border p-3 mb-3 br-large"</span><span class="nt">&gt;</span>.br-large<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+		</div>
+	</div>
+</div>
+
+		<footer class="footer no-mobile">
+			<nav class="footer__menu">
+				<a href="#" class="footer__logo"></a>
+				<a href="#" class="footer__menu__item">Menu Item 1</a>
+				<a href="#" class="footer__menu__item">Menu Item 2</a>
+				<a href="#" class="footer__menu__item">Menu Item 3</a>
+			</nav>
+			<nav class="footer__social">
+				<a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+			</nav>
+			<nav class="footer__menu">
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 1</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+			</nav>
+			<input type="text" class="footer__newsletter" placeholder="Nice placeholder text"/>
+		</footer>
+	</body>
+</html>
+

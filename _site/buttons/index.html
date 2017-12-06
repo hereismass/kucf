@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Buttons</title>
+		<link rel="stylesheet" href="/css/kucf.css">
+		<link rel="stylesheet" href="/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="/layout" class="menu__item ">Layout</a>
+				<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+				<a href="/buttons" class="menu__item menu__item--purple menu__item--selected">Buttons</a>
+				<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+				<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+				<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+				<a href="/utilities" class="menu__item ">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>
+
+<div class="jumbotron">
+	<h1 class="jumbotron__title">Buttons</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			<nav class="menu">
+	<a href="/layout" class="menu__item ">Layout</a>
+	<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+	<a href="/buttons" class="menu__item menu__item--purple menu__item--selected">Buttons</a>
+	<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+	<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+	<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+	<a href="/utilities" class="menu__item ">Utilities</a>
+</nav>
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			<p>Buttons are used for actions</p>
+
+<h2 id="default-buttons">Default buttons</h2>
+
+<p>Standard buttons using <code class="highlighter-rouge">.button</code> for form actions and page actions.</p>
+
+<div class="border br-small p-2 my-2"><button class="button" type="button">Button button</button>
+<a class="button" href="#" role="button">Link button</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<p>You can use a smaller version with the <code class="highlighter-rouge">.button--small</code> modifier.</p>
+
+<div class="border br-small p-2 my-2"><a class="button" href="#" role="button">Button</a>
+<a class="button button--small" href="#" role="button">Small button</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--small"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<p>You can use a full width version with the <code class="highlighter-rouge">.button--full</code> modifier.</p>
+
+<div class="border br-small p-2 my-2"><a class="button button--full" href="#" role="button">Button</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--full"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<h2 id="other-buttons">Other buttons</h2>
+
+<p>You can use these buttons for different type of actions, or for a specified theme page</p>
+
+<div class="border br-small p-2 my-2"><div class="p-2">
+  <a class="button button--second" href="#" role="button">Button</a>
+  <a class="button button--small button--second" href="#" role="button">Small button</a>
+</div>
+<div class="p-2">
+  <a class="button button--third" href="#" role="button">Button</a>
+  <a class="button button--small button--third" href="#" role="button">Small button</a>
+</div>
+<div class="p-2">
+  <a class="button button--fourth" href="#" role="button">Button</a>
+  <a class="button button--small button--fourth" href="#" role="button">Small button</a>
+</div>
+<div class="p-2">
+  <a class="button button--fifth" href="#" role="button">Button</a>
+  <a class="button button--small button--fifth" href="#" role="button">Small button</a>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--second"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--small button--second"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--third"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--small button--third"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--fourth"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--small button--fourth"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"p-2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--fifth"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--small button--fifth"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="fontawesome-icons">FontAwesome icons</h2>
+
+<p>By default you can add a FontAwesome icon before the text of the button.
+The only exception is the <code class="highlighter-rouge">.fa-chevron-right</code> icon that you can put at the end of a button.</p>
+
+<div class="border br-small p-2 my-2"><button class="button" type="button"><i class="fa fa-home"></i>Button button</button>
+<a class="button" href="#" role="button">Link button<i class="fa fa-chevron-right"></i></a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-home"</span><span class="nt">&gt;&lt;/i&gt;</span>Button button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-chevron-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span></code></pre></div>
+
+<h2 id="disabled-buttons">Disabled buttons</h2>
+
+<p>To disable a button, you can use the <code class="highlighter-rouge">.button--disabled</code> or the html attribute <code class="highlighter-rouge">disabled</code>.</p>
+
+<div class="border br-small p-2 my-2"><button class="button button--small button--second" type="button" disabled="">disabled small button</button>
+<a class="button button--fourth button--disabled" href="#" role="button">disabled button</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"button button--small button--second"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>disabled small button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button button--fourth button--disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+
+		</div>
+	</div>
+</div>
+
+		<footer class="footer no-mobile">
+			<nav class="footer__menu">
+				<a href="#" class="footer__logo"></a>
+				<a href="#" class="footer__menu__item">Menu Item 1</a>
+				<a href="#" class="footer__menu__item">Menu Item 2</a>
+				<a href="#" class="footer__menu__item">Menu Item 3</a>
+			</nav>
+			<nav class="footer__social">
+				<a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+			</nav>
+			<nav class="footer__menu">
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 1</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+			</nav>
+			<input type="text" class="footer__newsletter" placeholder="Nice placeholder text"/>
+		</footer>
+	</body>
+</html>
+

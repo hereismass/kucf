@@ -1,0 +1,61 @@
+/* - - - - BUTTONS - - - - */
+
+//simple button
+.button{
+	display: inline-block;
+	text-align: center;
+	height:50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	padding: 0 20px;
+	border:none;
+	background-color: map-get($kucf-colors, "first");
+	color:$color-white !important;
+	font-size: $fs-small;
+	font-weight: $fw-strong;
+	text-decoration:none;
+	white-space: nowrap;
+	cursor:pointer;
+	-webkit-appearance: none;
+	&:hover{
+		background-color: map-get($kucf-darkcolors, "first");
+	}
+	//fontawesome icon at the beginning of the button
+	.fa{
+		padding-right:$spacer1;
+		//exception : chevron icon at the END of the button
+		&.fa-chevron-right{
+			padding-right: 0;
+			padding-left: $spacer1;
+		}
+	}
+}
+
+//simple small button
+.button--small{
+	height:36px;
+	line-height:36px;
+	font-size: $fs-smaller;
+}
+
+//full width button
+.button--full{
+	width:100%;
+}
+
+
+
+//we need buttons for kucf colors
+@each $name, $color in $kucf-colors{
+	.button--#{$name}{
+		background-color: $color;
+		&:hover{
+			background-color: map-get($kucf-darkcolors, $name);
+		}
+	}
+}
+
+//button disabled
+.button--disabled, .button:disabled{
+	opacity:0.5;
+}

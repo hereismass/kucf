@@ -1,0 +1,16 @@
+/* - - - BASE - - - */
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+	height:100%;
+}
+
+body {
+  font-size: $body-font-size;
+  font-family: $body-font-stack;
+  font-weight: $fw-normal;
+  color: $color-dark;
+}

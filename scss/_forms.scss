@@ -1,0 +1,62 @@
+/* - - - - FORMS - - - - */
+
+//base input
+
+.input{
+  border: $bw-small $bs-normal $color-border-grey;
+  color: $color-dark;
+  padding: 14px $spacer3 15px $spacer3;
+  vertical-align: bottom;
+  width:280px;
+  @include mq-phone{
+      width:100% !important;
+      & + .button{
+        width:100%;
+        margin-top:$spacer2;
+      }
+  }
+}
+
+.input--small{
+  padding: 9px $spacer3;
+  font-size: $fs-smaller;
+}
+
+.input--short{
+  width:180px;
+}
+
+.input--full{
+  width:100%;
+  & + .button--full{
+    margin-top:$spacer2;
+  }
+}
+
+//search container
+
+.search-container{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  .input{
+    padding-right: $spacer5;
+  }
+  &:after{
+    content:"\f002";
+    font-family: FontAwesome;
+    color:$color-white;
+    position: absolute;
+    background-color: map-get($kucf-colors, "first");
+    top:0;
+    right:0;
+    bottom:0;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mq-phone{
+    width:100%;
+  }
+}

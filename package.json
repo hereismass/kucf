@@ -1,0 +1,25 @@
+{
+  "name": "kucf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": "hereismass/kucf",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "normalize.css": "^3.0.3",
+    "font-awesome": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Massimo Zambelli",
+  "license": "ISC"
+}

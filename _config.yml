@@ -1,0 +1,17 @@
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  auto_ids: true
+
+permalink: pretty
+source: docs
+baseurl: ""
+
+version: 3.1.2
+
+sass:
+  style: compressed
+
+github:
+  repo: https://github.com/hereismass/kucf

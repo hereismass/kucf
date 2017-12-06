@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Forms</title>
+		<link rel="stylesheet" href="/css/kucf.css">
+		<link rel="stylesheet" href="/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="/layout" class="menu__item ">Layout</a>
+				<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+				<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+				<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+				<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+				<a href="/forms" class="menu__item menu__item--yellow menu__item--selected">Forms</a>
+				<a href="/utilities" class="menu__item ">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>
+
+<div class="jumbotron">
+	<h1 class="jumbotron__title">Forms</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			<nav class="menu">
+	<a href="/layout" class="menu__item ">Layout</a>
+	<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+	<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+	<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+	<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+	<a href="/forms" class="menu__item menu__item--yellow menu__item--selected">Forms</a>
+	<a href="/utilities" class="menu__item ">Utilities</a>
+</nav>
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			<h2 id="simple-input">Simple input</h2>
+
+<p>use the <code class="highlighter-rouge">.input</code> class to have a simple input. It works well with a button.</p>
+
+<div class="border br-small p-2 my-2"><input placeholder="enter your text" class="input" />
+<a href="#" class="button">OK</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"enter your text"</span> <span class="na">class=</span><span class="s">"input"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button"</span><span class="nt">&gt;</span>OK<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<p>You can use a smaller version with the <code class="highlighter-rouge">.input--small</code> modifier.</p>
+
+<div class="border br-small p-2 my-2"><input placeholder="enter your text" class="input input--small" />
+<a href="#" class="button button--small">OK</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"enter your text"</span> <span class="na">class=</span><span class="s">"input input--small"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button button--small"</span><span class="nt">&gt;</span>OK<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<p>You can use <code class="highlighter-rouge">.input--short</code> modifier to shorten the length of the input.</p>
+
+<div class="border br-small p-2 my-2"><input placeholder="enter your text" class="input input--small input--short" />
+<a href="#" class="button button--small">OK</a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"enter your text"</span> <span class="na">class=</span><span class="s">"input input--small input--short"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button button--small"</span><span class="nt">&gt;</span>OK<span class="nt">&lt;/a&gt;</span></code></pre></div>
+
+<p>If you want full width forms, you can use <code class="highlighter-rouge">.input--full</code> modifier.</p>
+
+<div class="border br-small p-2 my-2"><input placeholder="enter your text" class="input input--full" />
+<a href="#" class="button button--full">OK<i class="fa fa-chevron-right"></i></a></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"enter your text"</span> <span class="na">class=</span><span class="s">"input input--full"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"button button--full"</span><span class="nt">&gt;</span>OK<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-chevron-right"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span></code></pre></div>
+
+<h2 id="search-input">Search input</h2>
+
+<p>If you want a search input, you can use <code class="highlighter-rouge">.search-container</code> as a wrapper for your <code class="highlighter-rouge">input</code>.</p>
+
+<div class="border br-small p-2 my-2"><div class="search-container">
+  <input placeholder="enter your text" class="input" />
+</div>
+<div class="search-container">
+  <input placeholder="enter your text" class="input input--small" />
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"enter your text"</span> <span class="na">class=</span><span class="s">"input"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"search-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">placeholder=</span><span class="s">"enter your text"</span> <span class="na">class=</span><span class="s">"input input--small"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+		</div>
+	</div>
+</div>
+
+		<footer class="footer no-mobile">
+			<nav class="footer__menu">
+				<a href="#" class="footer__logo"></a>
+				<a href="#" class="footer__menu__item">Menu Item 1</a>
+				<a href="#" class="footer__menu__item">Menu Item 2</a>
+				<a href="#" class="footer__menu__item">Menu Item 3</a>
+			</nav>
+			<nav class="footer__social">
+				<a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+			</nav>
+			<nav class="footer__menu">
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 1</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+			</nav>
+			<input type="text" class="footer__newsletter" placeholder="Nice placeholder text"/>
+		</footer>
+	</body>
+</html>
+

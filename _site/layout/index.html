@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Layout</title>
+		<link rel="stylesheet" href="/css/kucf.css">
+		<link rel="stylesheet" href="/docs.css">
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
+	    <link rel="icon" href="/favicon.ico">
+	</head>
+	<body class="default-theme">
+		<div id="mobile-menu" class="px-2 mobile">
+			<nav class="menu menu--mobile">
+				<span class="logofull logofull--white m-auto mt-2 mb-3"></span>
+				<a href="/" class="menu__item"><i class="fa fa-home"></i>Home</a>
+				<a href="/layout" class="menu__item">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="menu__item"><i class="fa fa-github"></i>Github</a>
+			</nav>
+			<nav class="menu menu--mobile">
+				<a href="/layout" class="menu__item menu__item--selected">Layout</a>
+				<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+				<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+				<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+				<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+				<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+				<a href="/utilities" class="menu__item ">Utilities</a>
+			</nav>
+			<nav class="menu menu--mobile">
+					<span class="menu__item">
+						<a href="#" class="link link--white"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-vimeo"></i></a>
+						<a href="#" class="link link--white"><i class="fa fa-flickr"></i></a>
+					</span>
+			</nav>
+			<input type="text" class="mobile-newsletter" placeholder="Nice placeholder text"/>
+			<a href="https://github.com/hereismass" class="button button--small m-2 d-block"><i class="fa fa-home"></i>About the author</a>
+		</div>
+		<header class="header">
+			<nav class="header__menu">
+				<a href="#mobile-menu" id="show-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" id="hide-menu" class="header__showmenu mobile"><i class="fa fa-bars"></i></a>
+				<a href="#" class="header__logo"></a>
+				<a href="/layout" class="header__menu__item no-mobile">Docs</a>
+				<a href="https://github.com/hereismass/kucf" class="header__menu__item no-mobile">GitHub</a>
+				<a href="https://github.com/hereismass" class="header__menu__item button button--small"><i class="fa fa-home"></i>About the author</a>
+			</nav>
+		</header>
+
+<div class="jumbotron">
+	<h1 class="jumbotron__title">Layout</h1>
+</div>
+<div class="container">
+	<div class="gridline">
+		<div class="gridline__column gc--1-4 no-mobile">
+			<nav class="menu">
+	<a href="/layout" class="menu__item menu__item--selected">Layout</a>
+	<a href="/variables" class="menu__item menu__item--green ">Framework variables</a>
+	<a href="/buttons" class="menu__item menu__item--purple ">Buttons</a>
+	<a href="/type" class="menu__item menu__item--orange ">Typography</a>
+	<a href="/menus" class="menu__item menu__item--pink ">Menus</a>
+	<a href="/forms" class="menu__item menu__item--yellow ">Forms</a>
+	<a href="/utilities" class="menu__item ">Utilities</a>
+</nav>
+		</div>
+		<div class="gridline__column gc--3-4 gc--t--1-1">
+			<p>Basic page containers and a basic grid system.</p>
+
+<h2 id="container">Container</h2>
+
+<p>Center your content with a <code class="highlighter-rouge">.container</code>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- content here --&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="grid-system">Grid system</h2>
+
+<p>Create rows with <code class="highlighter-rouge">.gridline</code> and individual columns with <code class="highlighter-rouge">.gridline__column</code>.</p>
+
+<p>Add a fraction class to each column:</p>
+
+<div class="border br-small p-2 my-2"><div class="gridline">
+  <div class="gc--1-5 gridline__column bg-light p-2">
+    .gc--1-5
+  </div>
+  <div class="gc--4-5 gridline__column bg-grey-light p-2">
+    .gc--4-5
+  </div>
+</div>
+<div class="gridline">
+  <div class="gc--1-4 gridline__column bg-light p-2">
+    .gc--1-4
+  </div>
+  <div class="gc--3-4 gridline__column bg-grey-light p-2">
+    .gc--3-4
+  </div>
+</div>
+<div class="gridline">
+  <div class="gc--1-3 gridline__column bg-light p-2">
+    .gc--1-3
+  </div>
+  <div class="gc--2-3 gridline__column bg-grey-light p-2">
+    .gc--2-3
+  </div>
+</div>
+<div class="gridline">
+  <div class="gc--1-2 gridline__column bg-light p-2">
+    .gc--1-2
+  </div>
+  <div class="gc--1-2 gridline__column bg-grey-light p-2">
+    .gc--1-2
+  </div>
+</div>
+<div class="gridline">
+  <div class="gc--1-1 gridline__column bg-light p-2">
+    .gc--1-1
+  </div>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gridline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-5 gridline__column bg-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-5
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--4-5 gridline__column bg-grey-light p-2"</span><span class="nt">&gt;</span>
+    .gc--4-5
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gridline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-4 gridline__column bg-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-4
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--3-4 gridline__column bg-grey-light p-2"</span><span class="nt">&gt;</span>
+    .gc--3-4
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gridline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-3 gridline__column bg-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-3
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--2-3 gridline__column bg-grey-light p-2"</span><span class="nt">&gt;</span>
+    .gc--2-3
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gridline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-2 gridline__column bg-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-2
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-2 gridline__column bg-grey-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-2
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gridline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-1 gridline__column bg-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-1
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>You can center a column with the <code class="highlighter-rouge">.gridline__column--centered</code> class.</p>
+
+<div class="border br-small p-2 my-2"><div class="gridline">
+  <div class="gc--1-2 gridline__column gridline__column--centered bg-light p-2">
+    .gc--1-2
+  </div>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gridline"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"gc--1-2 gridline__column gridline__column--centered bg-light p-2"</span><span class="nt">&gt;</span>
+    .gc--1-2
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>On mobile, all <code class="highlighter-rouge">.gridline__column</code> are considered as a <code class="highlighter-rouge">.gc--1-1</code>.
+You can specify different widths for tablet mode, with <code class="highlighter-rouge">.gc--t--1-5</code> and so on.</p>
+
+<h2 id="header">Header</h2>
+
+<p>A kucf website header template.</p>
+
+<div class="border br-small p-2 my-2"><div class="header">
+  <a href="#" class="header__logo"></a>
+  <nav class="header__menu">
+    <a href="#" class="header__menu__item">Menu Item 1</a>
+    <a href="#" class="header__menu__item">Menu Item 2</a>
+    <a href="#" class="header__menu__item button button--small"><i class="fa fa-home"></i>Specific Item</a>
+  </nav>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"header__logo"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"header__menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"header__menu__item"</span><span class="nt">&gt;</span>Menu Item 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"header__menu__item"</span><span class="nt">&gt;</span>Menu Item 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"header__menu__item button button--small"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-home"</span><span class="nt">&gt;&lt;/i&gt;</span>Specific Item<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="jumbotron">Jumbotron</h2>
+
+<p>You can add a <code class="highlighter-rouge">.jumbotron</code> before a <code class="highlighter-rouge">.container</code> in order to use as a title or to emphasize a certain text.</p>
+
+<div class="border br-small p-2 my-2"><div class="jumbotron">
+  <h1 class="jumbotron__title">Title</h1>
+  <p class="jumbotron__text">Some text</p>
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"jumbotron__title"</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"jumbotron__text"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="footer">Footer</h2>
+
+<p>A kucf website footer template.</p>
+
+<div class="border br-small p-2 my-2"><div class="footer">
+  <nav class="footer__menu">
+    <a href="#" class="footer__logo"></a>
+    <a href="#" class="footer__menu__item">Menu Item 1</a>
+    <a href="#" class="footer__menu__item">Menu Item 2</a>
+    <a href="#" class="footer__menu__item">Menu Item 3</a>
+  </nav>
+  <nav class="footer__social">
+    <a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+    <a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+  </nav>
+  <nav class="footer__menu">
+    <span class="footer__menu__item footer__menu__item--italic">Other Item 1</span>
+    <a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+    <a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+  </nav>
+  <input type="text" class="footer__newsletter" placeholder="Nice placeholder text" />
+</div></div>
+<div class="border br-small bg-light p-2 my-2 highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"footer"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"footer__menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__logo"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__menu__item"</span><span class="nt">&gt;</span>Menu Item 1<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__menu__item"</span><span class="nt">&gt;</span>Menu Item 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__menu__item"</span><span class="nt">&gt;</span>Menu Item 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"footer__social"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__social__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__social__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__social__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-instagram"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__social__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-vimeo"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__social__item"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-flickr"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"footer__menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"footer__menu__item footer__menu__item--italic"</span><span class="nt">&gt;</span>Other Item 1<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__menu__item footer__menu__item--italic"</span><span class="nt">&gt;</span>other Item 2<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"footer__menu__item footer__menu__item--italic"</span><span class="nt">&gt;</span>Other Item 3<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"footer__newsletter"</span> <span class="na">placeholder=</span><span class="s">"Nice placeholder text"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+		</div>
+	</div>
+</div>
+
+		<footer class="footer no-mobile">
+			<nav class="footer__menu">
+				<a href="#" class="footer__logo"></a>
+				<a href="#" class="footer__menu__item">Menu Item 1</a>
+				<a href="#" class="footer__menu__item">Menu Item 2</a>
+				<a href="#" class="footer__menu__item">Menu Item 3</a>
+			</nav>
+			<nav class="footer__social">
+				<a href="#" class="footer__social__item"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-vimeo"></i></a>
+				<a href="#" class="footer__social__item"><i class="fa fa-flickr"></i></a>
+			</nav>
+			<nav class="footer__menu">
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 1</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">other Item 2</a>
+				<a href="#" class="footer__menu__item footer__menu__item--italic">Other Item 3</a>
+			</nav>
+			<input type="text" class="footer__newsletter" placeholder="Nice placeholder text"/>
+		</footer>
+	</body>
+</html>
+
